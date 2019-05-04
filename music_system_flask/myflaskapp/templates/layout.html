@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.4.0.slim.js"
+  integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+  crossorigin="anonymous"></script>
+	<title>Amuse - Find the right music for you!</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/styles.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/intro.css') }}"/>	
+</head>
+<body>
+    <div id='cssmenu'>
+      <ul>
+          <li><a href='/'>Home<hr></a></li> 
+          <li><a href='/popularity'>Today's Top 10<hr></a></li>
+          <li><a href='/similarity'>Only For You<hr></a></li>
+      </ul>
+  </div>
+    {% block body %}{% endblock %}
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
